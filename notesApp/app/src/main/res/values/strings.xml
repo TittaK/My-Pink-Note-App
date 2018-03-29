@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">notesApp</string>
+    <string name="name">Note To Self</string>
+    <string name="enter">Enter a new note</string>
+    <string name="delete">DELETE</string>
+    <string name="delete_all">DELETE ALL</string>
+    <string name="add">ADD</string>
+    <string name="view">VIEW</string>
+    <string name="type">Type here</string>
+</resources>

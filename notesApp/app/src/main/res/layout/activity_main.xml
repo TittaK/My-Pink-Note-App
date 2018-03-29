@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@color/background"
+        style="@style/activated"
+        tools:context="com.example.timakiv.notesapp.MainActivity">
+
+
+        <ListView
+            android:id="@+id/lv"
+            style="@style/activated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textSize="30sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/buttonAdd"
+            />
+
+        <TextView
+            android:id="@+id/infoText"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:lines="2"
+            android:maxLines="2"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:hint="@string/type"
+            android:layout_below="@id/infoText"
+            />
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/enter"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/editText"
+            />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_below="@id/infoTextView"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Button
+            android:id="@+id/buttonSee"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginRight="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toLeftOf="@id/buttonAdd"
+            android:layout_toStartOf="@id/buttonAdd"
+            android:layout_below="@id/infoTextView"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Button
+            android:id="@+id/buttonRemoveSelected"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/buttonAdd"
+            android:layout_toRightOf="@id/buttonAdd"
+            android:layout_below="@id/infoTextView"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            />
+
+        <Button
+            android:id="@+id/buttonRemove"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_all"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/lv"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            />
+
+    </RelativeLayout>
+</layout>
